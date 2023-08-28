@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="edu.vanderbilt.grader.tools.persist.config.4">
+    <option name="configMap">
+      <map>
+        <entry key="GitSite" value="gitlab.com" />
+        <entry key="GitUser" value="" />
+        <entry key="GitToken" value="" />
+        <entry key="JdkDir" value="$USER_HOME$/.jdks/corretto-17.0.6" />
+        <entry key="SdkDir" value="C:\Users\90501\AppData\Local\Android\Sdk" />
+        <entry key="RepoRoot" value="REPOS" />
+        <entry key="InstallDir" value="INSTALL" />
+        <entry key="MarksOffPerFailedTest" value="5" />
+        <entry key="Verbose" value="false" />
+        <entry key="SavedReposFileName" value="STUDENTS" />
+        <entry key="CommitMessage" value="{UserCol}:{RepoCol}:{ProjCol} graded by {GitUser}." />
+        <entry key="ShowCommitMessage" value="false" />
+        <entry key="GraderDir" value="grader" />
+        <entry key="Https" value="https://{GitUser}:{GitToken}@{GitSite}/" />
+        <entry key="GitUserHyperLink" value="https:/{GitSite}/{GitUser}/" />
+        <entry key="Ssh" value="git@{GitSite}:" />
+        <entry key="GitLocator" value="{Https}" />
+        <entry key="Clone" value="git submodule add --force {GitLocator}{UserCol}/{RepoCol}.git {DirCol}" />
+        <entry key="Delete" value="git submodule deinit -f {DirCol};git rm -rf {DirCol}" />
+        <entry key="Grade" value="runAutograder -Psdk.dir='{SdkDir}' -Dorg.gradle.jvmargs=-Xmx1536m -Dedu.vanderbilt.grader.log.level=WARNING" />
+        <entry key="Commit" value="git commit -a -m'{CommitMessage}'" />
+        <entry key="Add" value="git add --all" />
+        <entry key="Revert" value="git reset --hard HEAD; git clean -f -d" />
+        <entry key="Pull" value="git pull" />
+        <entry key="Push" value="git push" />
+        <entry key="Status" value="git status -s" />
+        <entry key="Diff" value="git fetch --dry-run" />
+        <entry key="Run" value="pwd; ls -l" />
+        <entry key="SelCol" value="{0}" />
+        <entry key="UserCol" value="{1}" />
+        <entry key="RepoCol" value="{2}" />
+        <entry key="DateCol" value="{3}" />
+        <entry key="ProjCol" value="{4}" />
+        <entry key="DirCol" value="{5}" />
+        <entry key="StatusCol" value="{6}" />
+        <entry key="GradeCol" value="{7}" />
+      </map>
+    </option>
+  </component>
+</project>

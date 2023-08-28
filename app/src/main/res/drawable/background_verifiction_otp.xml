@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item>
+        <shape>
+
+            <solid  android:color="@color/white"/>
+            <corners android:radius="5dp"  />
+            <stroke android:color="@color/rm"  android:width="2dp" />
+
+
+        </shape>
+
+    </item>
+
+
+</layer-list>

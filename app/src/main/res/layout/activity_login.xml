@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="10"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back_to_main_from_profile"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="200dp"
+
+            android:paddingRight="10dp"
+            android:rotationX="180"
+            android:rotationY="180"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/ic_back"
+            app:iconGravity="end"
+            app:iconSize="30dp"
+            app:iconTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/image_login"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/ima" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/image_login"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toStartOf="@+id/btn_back_to_main_from_profile"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="0dp"
+
+
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_email_login"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_Edittext_register"
+            android:layout_marginHorizontal="25dp"
+
+            android:gravity="center"
+            android:hint="@string/email"
+            android:textColorHint="@color/profile_text_hin"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            app:helperTextTextColor="@color/red"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_email_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hight_text_register"
+
+                android:inputType="textEmailAddress"
+                android:textColor="@color/profile_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_password_login"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="5dp"
+
+            android:hint="@string/password"
+            android:textColorHint="@color/profile_text_hin"
+            app:hintAnimationEnabled="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true"
+
+            app:counterMaxLength="16"
+            app:counterEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_password_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hight_text_register"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:textColor="@color/profile_text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="27dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="9dp"
+            android:lineSpacingMultiplier="1.6"
+            android:text="@string/Forgotyourpassword"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btn_next_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_text_register"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/buttom"
+            android:inputType="text"
+            android:text="@string/Next"
+            android:textAllCaps="false"
+            android:textColor="@color/profile_text_btn_save"
+            android:textSize="20dp"
+            tools:ignore="ExtraText" />
+
+        <TextView
+            android:id="@+id/tv_Create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.6"
+            android:text="@string/don_t_have_an_account"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+

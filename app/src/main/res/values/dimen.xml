@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="start_padding_menu_attribut">50dp</dimen>
+    <dimen name="end_padding_menu_attribut">25dp</dimen>
+    <dimen name="height_menu_attribut">55dp</dimen>
+    <dimen name="margin_top_menu_attribut">8dp</dimen>
+    <dimen name="menu_point_bul">14dp</dimen>
+    <dimen name="menu_point_r">4dp</dimen>
+
+</resources>

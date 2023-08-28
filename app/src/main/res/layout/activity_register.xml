@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="10"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+
+
+   >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back_to_main_from_profile"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="131dp"
+            android:paddingRight="10dp"
+            android:rotationX="180"
+
+            android:rotationY="180"
+            app:backgroundTint="@color/black"
+
+            app:cornerRadius="100dp"
+            app:icon="@drawable/ic_back"
+            app:iconGravity="end"
+            app:iconSize="30dp"
+            app:iconTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/black"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/IV_regester"
+            android:layout_width="wrap_content"
+            android:layout_height="126dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginHorizontal="110dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginBottom="13dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:civ_circle_background_color="@color/rm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/IV_regester"
+            android:layout_alignParentStart="true"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="100dp"
+
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+
+            android:text="@string/register"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.496" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_edit_image_register"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="40dp"
+            android:layout_height="53dp"
+
+            android:layout_alignStart="@+id/IV_regester"
+
+            android:layout_alignBottom="@+id/IV_regester"
+            android:layout_marginStart="21dp"
+            android:layout_marginBottom="-7dp"
+
+            app:backgroundTint="@color/black"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconGravity="top"
+            app:iconSize="32dp"
+            app:iconTint="@color/white"
+            app:strokeColor="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="0dp"
+
+
+        android:layout_weight="6.8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_Edittext_register"
+            android:layout_below="@+id/circleImageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_first_name_register"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="25dp"
+                android:layout_weight="50"
+
+                android:hint="@string/first_name"
+                android:textColorHint="@color/profile_text_hin"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_first_name_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_text_register"
+                    android:backgroundTint="@color/white"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:textColor="@color/profile_text"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_last_name_register"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="50"
+
+                android:hint="@string/last_name"
+                android:textColorHint="@color/profile_text_hin"
+                app:helperTextTextColor="@color/red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_last_name_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_text_register"
+
+                    android:textColor="@color/profile_text"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hight_Edittext_register"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginHorizontal="25dp"
+                tools:ignore="MissingConstraints">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_Edittext_register"
+
+                    tools:layout_editor_absoluteY="21dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_phone_number_register"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hight_Edittext_register"
+                        android:gravity="start"
+                        android:hint="@string/phone_number"
+                        android:orientation="horizontal"
+                        android:paddingLeft="0dp"
+                        app:counterMaxLength="5">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/edit_phone_number_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hight_text_register"
+                            android:gravity="center"
+
+
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxEms="11"
+                            android:maxLength="12"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center|start"
+
+                    android:transformPivotY="100dp"
+                    app:ccpDialog_backgroundColor="@color/white"
+                    app:ccp_contentColor="@color/black"
+                    app:ccp_countryAutoDetectionPref="SIM_NETWORK_LOCALE"
+                    app:ccp_defaultPhoneCode="90"
+
+                    app:ccp_showFlag="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="16dp">
+
+
+                </com.hbb20.CountryCodePicker>
+
+
+                <!--</com.google.android.material.textfield.TextInputLayout>-->
+            </RelativeLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_email_register"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_Edittext_register"
+            android:layout_marginHorizontal="25dp"
+
+
+            android:hint="@string/email"
+            android:textColorHint="@color/profile_text_hin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:errorEnabled="true"
+
+            app:helperTextTextColor="@color/red"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_email_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hight_text_register"
+
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+
+                android:textColor="@color/profile_text"
+
+
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_password_register"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_Edittext_register"
+            android:layout_marginHorizontal="25dp"
+
+            android:layout_gravity="center"
+
+            android:hint="@string/password"
+            app:hintAnimationEnabled="true"
+            android:textColorHint="@color/profile_text_hin"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true"
+
+            app:counterMaxLength="16"
+            app:counterEnabled="true"
+            app:helperTextTextColor="@color/red"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_password_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hight_text_register"
+                android:gravity="center"
+                android:autofillHints="password"
+
+
+                android:inputType="textPassword"
+                android:textColor="@color/profile_text"
+
+
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/backgroundTEXT"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="7dp"
+
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/PhotoIsRequired"
+                android:textColor="@color/TextColor_icon_register"
+                android:textSize="14dp"
+                app:drawableStartCompat="@drawable/info"
+
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btn_next_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_text_register"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="55dp"
+
+
+            android:background="@drawable/buttom"
+
+            android:text="@string/Next"
+            android:textAllCaps="false"
+            android:textColor="@color/profile_text_btn_save"
+            android:textSize="20dp"
+            tools:ignore="ExtraText"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar_otp_mobile_Register"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="36dp"
+                android:layout_height="35dp"
+                android:visibility="gone"
+                android:layout_alignTop="@+id/btn_next_register"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:translationZ="10dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_otp_email_Register"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="36dp"
+                android:layout_height="35dp"
+                android:visibility="gone"
+                android:layout_alignStart="@+id/btn_next_register"
+                android:layout_alignTop="@+id/btn_next_register"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="8dp"
+                android:translationZ="10dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hight_text_register"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingMultiplier="1.1"
+            android:text="@string/when_you_create_an_account"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#008FFF</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="blue">#1750FD</color>
+    <color name="blue_light">#3BA9FF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black_light">#616161</color>
+    <color name="background_light">#F3F3F3</color>
+    <color name="menu_btn_next">#B4B4B4</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="profile_text_hin">#707070</color>
+    <color name="profile_text">#000000</color>
+    <color name="profile_background_message">#EBF6FF</color>
+    <color name="profile_text_message">#008FFF</color>
+    <color name="profile_background_btn_save">#F3F3F3</color>
+    <color name="profile_text_btn_save">#B4B4B4</color>
+    <color name="menu_background_text_field">#F3F3F3</color>
+    <color name="menu_text_text_field_hin">#616161</color>
+    <color name="menu_text_text_field">#61B7FA</color>
+    <color name="menu_point_blue">#008FFF</color>
+    <color name="menu_point_r">#707070</color>
+    <color name="menu_point_black">#000000</color>
+    <color name="menu_btn_onclick">#6FC0FF</color>
+    <color name="navigation_drawer_btn_sing_out">#FF0000</color>
+    <color name="rm">#616161</color>
+    <color name="backgroundTEXT">#FBE8D9</color>
+
+    <color name="TextColor_icon_register">#DC9B59</color>
+    <color name="red">#E10C0C</color>
+
+
+
+</resources>

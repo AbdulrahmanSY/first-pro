@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentationLayer.userInterface.OTP">
+
+    <TextView
+        android:id="@+id/tv_verifiction_code"
+        android:layout_width="238dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="100dp"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="@string/verification_code"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/otp_pinview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423"
+        tools:ignore="TextViewEdits" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back_arr_otp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="45dp"
+        android:layout_height="59dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/close"
+        android:paddingRight="10dp"
+        android:rotation="180"
+        app:backgroundTint="@color/black"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_back"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:iconTint="@color/white"
+        app:layout_anchorGravity="top|end"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_verifiction_code"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black" />
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/otp_pinview"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="0dp"
+
+        app:cursorVisible="true"
+        app:forceKeyboard="true"
+        app:hint="0"
+
+        app:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        app:layout_constraintVertical_bias="0.357"
+        app:password="false"
+        app:pinBackground="@drawable/background_verifiction_otp"
+        app:pinHeight="40dp"
+        app:pinLength="6"
+        app:pinWidth="40dp"
+        app:textSize="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="169dp"
+        android:layout_height="64dp"
+        android:background="@drawable/background_phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:translationY="40dp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_pinview"
+        app:layout_constraintVertical_bias="0.207"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_counter_otp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            tools:layout_editor_absoluteX="119dp"
+
+
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_resend_otp"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_login"
+            android:layout_alignParentTop="true"
+            android:text="Resend"
+            android:visibility="gone"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_error_otp"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:layout_marginVertical="50dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/otp_pinview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verifiction_code"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/pro_otp"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:translationY="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_pinview" />
+
+    <ImageView
+        android:id="@+id/im_error_otp"
+        android:layout_width="90dp"
+        android:layout_height="67dp"
+        android:translationY="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pro_otp"
+        app:layout_constraintEnd_toEndOf="@+id/pro_otp"
+        app:layout_constraintStart_toStartOf="@+id/pro_otp"
+        app:layout_constraintTop_toTopOf="@+id/pro_otp"
+        app:layout_constraintVertical_bias="0.526"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/im_right_otp"
+        android:layout_width="90dp"
+        android:layout_height="67dp"
+        android:translationY="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pro_otp"
+        app:layout_constraintEnd_toEndOf="@+id/pro_otp"
+        app:layout_constraintStart_toStartOf="@+id/pro_otp"
+        app:layout_constraintTop_toTopOf="@+id/pro_otp"
+        app:layout_constraintVertical_bias="0.761"
+        app:srcCompat="@drawable/ic_baseline_done_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hight_text_register">51dp</dimen>
+    <dimen name="hight_Edittext_register">75dp</dimen>
+    <dimen name="_6sdp">10dp</dimen>
+    <dimen name="_4sdp">10dp</dimen>
+    <dimen name="_1sdp">50dp</dimen>
+
+</resources>

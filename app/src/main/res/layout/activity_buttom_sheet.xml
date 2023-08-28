@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/menu_hinde"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentationLayer.userInterface.buttomSheet"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/start_padding_menu_attribut"
+        android:layout_marginEnd="@dimen/end_padding_menu_attribut"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_menu_shopping"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_menu_attribut"
+            android:layout_weight="5"
+            android:backgroundTint="@color/menu_background_text_field"
+
+            android:paddingVertical="25dp"
+            android:paddingStart="30.43dp"
+            android:paddingEnd="33.1dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_menu_home"
+
+
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_menu_attribut"
+            android:layout_marginStart="5dp"
+
+            android:layout_weight="5"
+
+            android:backgroundTint="@color/menu_background_text_field"
+            android:clickable="true"
+            android:paddingVertical="21.56dp"
+            android:paddingStart="34dp"
+            android:paddingEnd="33.85dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/group_10175"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_menu_add"
+
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_menu_attribut"
+            android:layout_marginStart="5dp"
+            android:layout_weight="5"
+            android:backgroundTint="@color/menu_background_text_field"
+            android:clickable="true"
+            android:paddingVertical="22dp"
+            android:paddingStart="36dp"
+            android:paddingEnd="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_text_menu_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menu_attribut"
+
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/start_padding_menu_attribut"
+        android:layout_marginEnd="@dimen/end_padding_menu_attribut"
+        android:hint="Enter your destination"
+        android:singleLine="true"
+        android:backgroundTintMode="@color/menu_background_text_field"
+        android:textColorHint="@color/menu_text_text_field_hin"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_menu_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/menu_background_text_field"
+
+            android:inputType="text"
+            android:paddingLeft="30dp"
+            android:textColor="@color/menu_text_text_field"
+            android:textDirection="ltr"
+
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_text_menu_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menu_attribut"
+        android:layout_marginStart="@dimen/start_padding_menu_attribut"
+        android:layout_marginEnd="@dimen/end_padding_menu_attribut"
+        android:layout_marginTop="@dimen/margin_top_menu_attribut"
+        android:hint="Enter your destination"
+        android:singleLine="true"
+        android:textColorHint="@color/menu_text_text_field_hin"
+        app:layout_constraintEnd_toEndOf="@+id/input_text_menu_one"
+        app:layout_constraintStart_toStartOf="@+id/input_text_menu_one"
+        app:layout_constraintTop_toBottomOf="@+id/input_text_menu_one">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_menu_tow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/menu_background_text_field"
+            android:inputType="text"
+            android:paddingLeft="30dp"
+            android:textColor="@color/menu_text_text_field"
+            android:textDirection="ltr"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_text_menu_three"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menu_attribut"
+
+        android:layout_marginStart="@dimen/start_padding_menu_attribut"
+        android:layout_marginEnd="@dimen/end_padding_menu_attribut"
+        android:layout_marginTop="@dimen/margin_top_menu_attribut"
+        android:hint="Enter your destination"
+        android:singleLine="true"
+        android:textColorHint="@color/menu_text_text_field_hin"
+        app:layout_constraintEnd_toEndOf="@+id/input_text_menu_tow"
+        app:layout_constraintStart_toStartOf="@+id/input_text_menu_tow"
+        app:layout_constraintTop_toBottomOf="@+id/input_text_menu_tow">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_menu_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:backgroundTint="@color/menu_background_text_field"
+            android:inputType="text"
+            android:textColor="@color/menu_text_text_field"
+            android:textDirection="ltr" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menu_attribut"
+        android:layout_marginStart="@dimen/start_padding_menu_attribut"
+        android:layout_marginEnd="@dimen/end_padding_menu_attribut"
+        android:layout_marginTop="@dimen/margin_top_menu_attribut"
+
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input_text_menu_three"
+        app:layout_constraintStart_toStartOf="@+id/input_text_menu_three"
+        app:layout_constraintTop_toBottomOf="@+id/input_text_menu_three"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLayout4"
+
+            style="@style/OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="3.2">
+
+            <AutoCompleteTextView
+                android:id="@+id/outlined_exposed_dropdown_editable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:drawableTop="@drawable/clock_timing"
+                android:drawableRight="@drawable/triangle_bottom_icon"
+                android:maxLines="1"
+
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:text="Now"
+                android:textColor="@color/menu_text_text_field"
+                android:textSize="14dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:backgroundTint="@color/menu_background_text_field"
+            android:text="Next"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/menu_btn_next"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <include
+
+        layout="@layout/tst"
+        android:layout_width="22dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/input_text_menu_three"
+        app:layout_constraintEnd_toStartOf="@+id/input_text_menu_tow"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.41" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

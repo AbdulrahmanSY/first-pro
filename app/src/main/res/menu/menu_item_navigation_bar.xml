@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/free_rides"
+        android:title="Free rides"
+        android:icon="@drawable/free_rids"
+
+        />
+    <item
+        android:id="@+id/pre_order"
+        android:title="Pre order"
+        android:icon="@drawable/pre_order"
+
+
+
+        />
+    <item
+        android:id="@+id/rides"
+        android:title="Rides"
+        android:icon="@drawable/ride"
+        />
+    <item
+        android:id="@+id/couier"
+        android:title="Couier"
+        android:icon="@drawable/couiro"
+
+
+        />
+    <item
+        android:id="@+id/paymentmethods"
+        android:title="Payment methods"
+        android:icon="@drawable/payment"
+
+
+
+        />
+    <item
+        android:id="@+id/help_and_contact"
+        android:title="Help and contact"
+        android:icon="@drawable/help"
+        />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/setting"
+
+        />
+
+
+</menu>

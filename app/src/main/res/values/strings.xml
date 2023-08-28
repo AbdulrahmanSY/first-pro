@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Maptask</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="close">close</string>
+    <string name="open">open</string>
+    <string name="save_change">Save change</string>
+    <string name="first_name">first name <font color='#FF0000'>*</font></string>
+    <string name="last_name">last name <font color='#FF0000'>*</font></string>
+    <string name="email">Email <font color='#FF0000'>*</font></string>
+    <string name="phone_number">Phone number <font color='#FF0000'>*</font></string>
+    <string name="register">Register</string>
+    <string name="password">Password  <font color='#FF0000'>*</font></string>
+    <string name="the_new_phone_must_be_verified">The new phone must be verified</string>
+    <string name="PhotoIsRequired">Photo is required</string>
+    <string name="Next">Next</string>
+    <string name="when_you_create_an_account">When you create an account, you agree to
+        <font color='#008FFF'><u><b><i>the Terms of Use</i></b></u></font> and <font color='#008FFF'> <u><b><i>Privacy Policy</i></b></u></font></string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account"><font color='#008FFF'><u><b> Don\'t have an account? Create a new account</b></u></font></string>
+    <string name="Forgotyourpassword"><font color='#008FFF'><u><b> Forgot your password?</b></u></font></string>
+    <string name="verification_code">|_verification_code</string>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header_nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/menu_point_blue"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/layout"
+        android:orientation="horizontal"
+
+        tools:ignore="UnknownId">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/btn_navigation_bar_circle_image"
+                android:layout_width="109dp"
+                android:layout_height="97dp"
+                android:src="@drawable/man"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_overlay="true"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_navigation_bar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:drawablePadding="1dp"
+                android:text="AH"
+                android:textColor="@color/white"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_navigation_bar_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:text="4.9"
+                android:textColor="@color/white"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_star"
+
+
+
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back_arr"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="22dp"
+        android:contentDescription="@string/close"
+        android:paddingRight="10dp"
+        app:backgroundTint="@color/black"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_back"
+        app:iconGravity="start"
+        app:iconSize="30dp"
+        app:iconTint="@color/white"
+        app:layout_anchorGravity="top|end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black" />
+
+
+</RelativeLayout>
